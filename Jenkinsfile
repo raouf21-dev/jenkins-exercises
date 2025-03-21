@@ -1,4 +1,4 @@
-pipelline {
+pipeline {
     agent any
     tools {
         node "node"
