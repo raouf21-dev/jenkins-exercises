@@ -1,4 +1,4 @@
-pipleline {
+pipelline {
     agent any
     tools {
         node "node"
@@ -8,7 +8,7 @@ pipleline {
         stage("test"){
             steps{
                 script{
-                    echo "npm -v"
+                    sh "npm -v"
                 }
             }
         }
