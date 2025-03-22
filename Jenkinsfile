@@ -51,10 +51,9 @@ pipeline {
         stage("Deploying image"){
             steps{
                 script{
-                    echo "Deploying image..."
+                    echo "Deploying image.."
                 }
             }
-        }
-        
+        }        
     }
 }
