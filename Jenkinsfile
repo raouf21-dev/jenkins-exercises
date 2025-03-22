@@ -4,9 +4,7 @@ pipeline {
     tools {
         nodejs 'node'
     }
-    parameters {
-        string(name: 'COMMITTER_EMAIL', defaultValue: '', description: 'Email of the commit author')
-    }
+   
     stages{
         stage("Increment version"){
             steps{
