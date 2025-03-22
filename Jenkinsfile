@@ -21,6 +21,7 @@ pipeline {
 
                         // set the new version as part of IMAGE_NAME
                         env.IMAGE_NAME = "$version-$BUILD_NUMBER"
+                        echo "This is the version $version"
                     }
 
                 }
