@@ -29,8 +29,10 @@ pipeline {
         stage("test"){
             steps{
                 script{
-                    sh "npm install"
-                    sh "npm run test"
+                    dir('app'){
+                        sh "npm install"
+                        sh "npm run test"
+                    }
                 }
             }
         }
