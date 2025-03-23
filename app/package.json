@@ -1,6 +1,6 @@
 {
   "name": "bootcamp-node-project",
-  "version": "1.969.0",
+  "version": "1.970.0",
   "description": "versioning-test",
   "main": "server.js",
   "scripts": {
