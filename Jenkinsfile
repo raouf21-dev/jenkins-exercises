@@ -1,5 +1,5 @@
-@Library("Jenkins-SharedLibrary")_
-
+@Library ("Jenkins-SharedLibrary")_
+def gv
 pipeline {
     agent any
     
@@ -11,42 +11,42 @@ pipeline {
         stage('Check Committer') {
             steps {
                 script {
-                    checkCommiter()
+                    gv.checkCommiter()
                 }
             }
         }
         stage("Increment version"){
             steps{
                 script{
-                    incrementVersion()
+                    gv.incrementVersion()
                 }
             }
         }
         stage("Run tests"){
             steps{
                 script{
-                    testApp()
+                    gv.testApp()
                 }
             }
         }
         stage("Build & Push docker image"){
             steps{
                 script{
-                    buildPushDocker()
+                    gv.buildPushDocker()
                 }
             }
         }
         stage("Deploying image"){
             steps{
                 script{
-                    deployApp()
+                    gv.deployApp()
                 }
             }
         }        
         stage("commit version update"){
             steps{
                 script{
-                    commitVersionUpdate()
+                    gv.commitVersionUpdate()
                 }
             }
         }
