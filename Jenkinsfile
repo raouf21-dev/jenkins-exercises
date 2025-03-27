@@ -11,14 +11,14 @@ pipeline {
         stage('Check Committer') {
             steps {
                 script {
-                    echo "checkCommiter()"
+                    checkCommiter()
                 }
             }
         }
         stage("Increment version"){
             steps{
                 script{
-                    echo "incrementVersion()"
+                    incrementVersion()
                 }
             }
         }
