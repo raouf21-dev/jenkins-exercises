@@ -32,7 +32,7 @@ pipeline {
         stage("Build & Push docker image"){
             steps{
                 script{
-                    buildPushDocker()
+                    buildPushDockerImage()
                 }
             }
         }
